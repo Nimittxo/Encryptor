@@ -1,7 +1,8 @@
-# Encryptor.......
+print('''========================== Made By Nimitt Sharma =====================\n''')
+print(''' Created 2-Jan-2023 ''')
+print(''' Edited 3-Oct-2023 \n''')
+imp = input("Your Password after Encryption : ")
 
-''' Made By Nimitt '''
-imp = input("Enter your password for Encryption : ")
 
 for i in imp:
     i = i.upper()
@@ -86,7 +87,21 @@ for i in imp:
         
     else:
         print(i,end="")
-        
+
+
+if len(imp)<1:
+    print("\nYour Password will take 1 milliesecond to crack !")
+elif len(imp)<5:
+    print("\nYour password is slightly weak try adding more !")
+elif len(imp)>12:
+    print("\nhmm... Strong enough to be cracxked in 100 years !")
+
+elif len(imp)>20:
+    print("\nSafest Password... will take 1 Million Years :)")
+
+else:
+    ("\n                                  Strong Enough !")
+print("\n==============  Don't forget to Like if you find it useful! ============")
 
         
         
